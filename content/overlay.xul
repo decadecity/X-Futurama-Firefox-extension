@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://xfuturama/skin/overlay.css" type="text/css"?>
+<overlay id="xfuturama-overlay"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="xfuturama.js"/>
+
+  <statusbar id="status-bar">
+    <statusbarpanel id="x-futurama-panel"
+	  class="statusbarpanel-iconic-text"
+	  hidden="true"
+          position="1"
+      onclick="FUTURAMA.showQuote();"/>
+  </statusbar>
+
+</overlay>

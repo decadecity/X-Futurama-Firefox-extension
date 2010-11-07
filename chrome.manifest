@@ -1,0 +1,7 @@
+content xfuturama content/
+overlay chrome://browser/content/browser.xul chrome://xfuturama/content/overlay.xul
+
+locale xfuturama en-US locale/en-US/
+
+skin xfuturama classic/1.0 skin/
+style chrome://global/content/customizeToolbar.xul chrome://xfuturama/skin/overlay.css
