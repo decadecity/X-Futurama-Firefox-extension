@@ -1,0 +1,7 @@
+content xbender content/
+overlay chrome://browser/content/browser.xul chrome://xbender/content/overlay.xul
+
+locale xbender en-US locale/en-US/
+
+skin xbender classic/1.0 skin/
+style chrome://global/content/customizeToolbar.xul chrome://xbender/skin/overlay.css

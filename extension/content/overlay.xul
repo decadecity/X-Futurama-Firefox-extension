@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://xbender/skin/overlay.css" type="text/css"?>
+<overlay id="xbender-overlay"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="xbender.js"/>
+
+  <statusbar id="status-bar">
+    <statusbarpanel id="x-bender-panel"
+	  class="statusbarpanel-iconic-text"
+	  hidden="true"
+          position="1"
+      onclick="BENDER.showQuote();"/>
+  </statusbar>
+
+</overlay>

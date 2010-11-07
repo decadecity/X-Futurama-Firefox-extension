@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+   
+    <em:id>xbender@ha.cr</em:id>
+    <em:name>X-Bender</em:name>
+    <em:version>1.0</em:version>
+    <em:type>2</em:type>
+    <em:description>Shows Bender, Fry, and Leela quotes from HTTP headers.</em:description>
+    <em:creator>Josh Leder</em:creator>
+    <!-- optional items -->
+    <em:contributor>Matt Groening</em:contributor>
+    <em:contributor>Slashdot</em:contributor>
+    
+    <em:homepageURL>http://ha.cr/x-bender</em:homepageURL>
+    <em:iconURL>chrome://xbender/skin/bender.png</em:iconURL>
+    <!-- em:optionsURL>chrome://sampleext/content/settings.xul</em:optionsURL>
+    <em:aboutURL>chrome://sampleext/content/about.xul</em:aboutURL>
+    <em:iconURL>chrome://sampleext/skin/mainicon.png</em:iconURL>
+    
+    <em:updateURL>http://sampleextension.mozdev.org/update.rdf</em:updateURL-->
+    
+    <!-- Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>1.0</em:minVersion>
+        <em:maxVersion>3.0.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    
+  </Description>
+
+</RDF>
