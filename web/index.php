@@ -26,9 +26,9 @@ body {background:#53f28f;margin:0;font-family:"helvetica neue",arial,helvetica,s
 #quote {color:white;height:0;margin:auto;position:relative;text-align:center;text-transform:uppercase;top: 235px;width:450px;}
 .add-button {-moz-border-radius:13px 13px 13px 13px;-moz-box-shadow:0 0 1px rgba(255, 255, 255, 0.1) inset;background:-moz-linear-gradient(center top , #93C85E 30%, #55A802 55%) repeat scroll 0 0 transparent;border:1px groove #3A7404;color:white;display:table;padding:0 0.5em;text-decoration:none;text-shadow:0 -1px 0 #3A7404;float:right;margin-top:7px;}
 .add-button:hover {border-color:#1a5404;}
-.add-button span {border-left:2px groove rgba(150, 150, 150, 0.35);display:inline-block;line-height:1.2;margin:0 0.25em 0 0.25em;padding:0.3em 0.5em 0.2em 0.65em;white-space:normal;display:table;padding: 0 0.5em;text-decoration:none;text-shadow:0 -1px 0 #3A7404;float:right;margin-top:7px;}
+.add-button span {border-left:2px groove rgba(150, 150, 150, 0.35);display:inline-block;line-height:1.2;margin:2px 0.25em;padding:0.3em 0.5em 0.2em 0.65em;white-space:normal;display:table;padding: 0 0.5em;text-decoration:none;text-shadow:0 -1px 0 #3A7404;float:right;}
 .download-button {-webkit-border-radius:13px;-webkit-box-shadow: #C0E1EE 0px 0px 3px inset;background:white none;border:1px groove #B5D9E5;color:#859FAE;text-shadow: white 0px 1px 0px;display:table;padding: 0 0.5em;text-decoration:none;float:right;margin-top:7px;}
-.download-button span {border-left:2px groove rgba(150, 150, 150, 0.35);display:inline-block;line-height:1.2;margin:0 0.25em 0 0.25em;padding:0.3em 0.5em 0.2em 0.65em;white-space:normal;display:table;padding: 0 0.5em;text-decoration:none;text-shadow:0 -1px 0 #859FAE;float:right;margin-top:7px;}
+.download-button span {border-left:2px groove rgba(150, 150, 150, 0.35);display:inline-block;line-height:1.2;margin:2px 0.25em;padding:0.3em 0.5em 0.2em 0.65em;white-space:normal;display:table;padding: 0 0.5em;text-decoration:none;text-shadow:0 -1px 0 #859FAE;float:right;}
 #download-wrapper {-moz-border-radius:5px;background-color:white;border:2px solid grey;color:#444444;display:table;margin-top:20px;margin:auto;padding:0 20px 20px 20px;width:510px;}
 a {color:#003595;text-decoration:none;}
 #download-wrapper img {float:left;margin-right:10px;}
