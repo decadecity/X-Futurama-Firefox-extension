@@ -13,8 +13,8 @@ header($header[0].': '.$header[1]);
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta http-equiv="<?php echo $header[0] ?>" content="<?php echo $header[1] ?>">
-  <title></title>
-  <meta name="description" content="">
+  <title>X-Futurama Firefox extension</title>
+  <meta name="description" content="Firefox extension that shows X-Bender, X-Fry, X-Leela, X-Professor-Farnsworth and X-Zapp-Brannigan HTTP headers.">
   <meta name="author" content="">
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <style type="text/css">
@@ -87,7 +87,7 @@ body {
   display:table;
   margin-top: 20px;
   margin:auto;
-  padding:40px 20px 20px 20px;
+  padding:0 20px 20px 20px;
   width:510px;
 }
 
@@ -104,8 +104,38 @@ a {
 
 #download-wrapper p {
   margin:0;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   text-align:justify;
+}
+
+table {
+  font-size:85%;
+  border-collpase:collapse;
+  border-spacing:0;
+  padding-bottom:20px;
+}
+
+th, td {
+padding: 5px 0;
+vertical-align:top;
+}
+
+.divider th, .divider td {
+border-top:1px dotted #A5C9D5;
+}
+
+th {
+color:#223355;
+text-align:left;
+padding-right:20px;
+}
+
+
+td h2 {
+  font-size:100%;
+  font-weight:normal;
+  padding:0;
+  margin:0;
 }
 
   </style>
@@ -114,16 +144,31 @@ a {
 <div id="what-if-machine">
   <div style="margin:auto;display:table;">
   <div id="quote"><?php echo strtr(substr($header[0],2), '-', ' ').': <strong>'.$header[1] ?></strong></div>
-  <img src="what-if-machine.png" height="433" width="706"/>
+  <img src="what-if-machine.png" alt="What if machine" height="433" width="706"/>
   </div>
 </div>
 <div id="go-faster-stripe"><div class="shade"></div></div>
 <div id="hull">
 <div id="download-wrapper">
-<img src="icon.png"/>
+<h1>X-Futurama</h1>
+<img src="icon.png" alt="X-Futurama Firefox extension icon"/>
 <p>Some websites, including this one, add a quote from Futurama to the <a href="http://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Common_non-standard_headers">HTTP headers</a>.  If you are visiting a site that has these headers this Firefox extenstion shows the quote in the status bar.</p>
-<img src="preview.png"/>
-<a href="xfuturama.1.0.xpi" class="add-button"><b>+</b><span>Add to Firefox</span></a>
+<table>
+<tbody>
+<tr>
+<th>Current&nbsp;Version</th><td>1.0</td>
+</tr>
+<tr class="divider">
+<th>Works&nbsp;with</th><td>Firefox 1.5 - 3.6</td>
+</tr>
+<tr class="divider">
+<th>Recognised&nbsp;headers</th><td><h2>X-Bender, X-Fry, X-Leela, X-Professor-Farnsworth and X-Zapp-Brannigan</h2></td>
+</tr>
+</tbody>
+</table>
+<img src="preview.png" title="Bender: Behold, the internet." alt="X-Bender: Behold, the internet."/>
+<a title="Add this extension to your copy of Firefox" href="xfuturama.1.0.xpi" class="add-button"><b>+</b><span>Add to Firefox</span></a>
+
 </div>
 </div>
 </body>
