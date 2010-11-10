@@ -1,2 +1,2 @@
 #/bin/bash
-zip -rT9 ../xfuturama.xpi ../extension/*
+zip -rT9 web/xfuturama.xpi extension/*
