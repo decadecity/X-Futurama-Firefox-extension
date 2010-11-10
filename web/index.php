@@ -2,6 +2,9 @@
 require_once('headers/futurama.php');
 $header = Futurama::get_header();
 header($header[0].': '.$header[1]);
+
+$ff = stripos($_SERVER['HTTP_USER_AGENT'], 'firefox') !== False;
+
 ?>
 <!doctype html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
@@ -20,6 +23,8 @@ header($header[0].': '.$header[1]);
   <style type="text/css">
 body {
   background: #53f28f; margin:0;
+  font-family:"helvetica neue",arial,helvetica,sans-serif;
+  font-size:100%;
 }
 
 #what-if-machine {
@@ -77,6 +82,41 @@ body {
   margin:0 0.25em 0 0.25em;
   padding:0.3em 0.5em 0.2em 0.65em;
   white-space:normal;
+  display:table;
+  padding: 0 0.5em;
+  text-decoration:none;
+  text-shadow:0 -1px 0 #3A7404;
+  float:right;
+  margin-top:7px;
+}
+
+.download-button {
+  -webkit-border-radius:13px;
+  -webkit-box-shadow: #C0E1EE 0px 0px 3px inset;
+  background: white none;
+  border:1px groove #B5D9E5;
+  color: #859FAE;
+  text-shadow: white 0px 1px 0px;
+  display:table;
+  padding: 0 0.5em;
+  text-decoration:none;
+  float:right;
+  margin-top:7px;
+}
+
+.download-button span {
+  border-left:2px groove rgba(150, 150, 150, 0.35);
+  display:inline-block;
+  line-height:1.2;
+  margin:0 0.25em 0 0.25em;
+  padding:0.3em 0.5em 0.2em 0.65em;
+  white-space:normal;
+  display:table;
+  padding: 0 0.5em;
+  text-decoration:none;
+  text-shadow:0 -1px 0 #859FAE;
+  float:right;
+  margin-top:7px;
 }
 
 #download-wrapper {
@@ -169,8 +209,11 @@ td h2 {
 </tbody>
 </table>
 <img src="preview.png" title="Bender: Behold, the internet." alt="X-Bender: Behold, the internet."/>
+<?php if ($ff) : ?>
 <a title="Add this extension to your copy of Firefox" href="xfuturama.1.0.xpi" class="add-button"><b>+</b><span>Add to Firefox</span></a>
-
+<?php else: ?>
+<a title="Download this extension" href="xfuturama.1.0.xpi" class="download-button"><b>&darr;</b><span>Download</span></a>
+<?php endif ?>
 </div>
 </div>
 </body>
