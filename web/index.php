@@ -18,7 +18,9 @@ header($header[0].': '.$header[1]);
   <meta name="author" content="">
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <style type="text/css">
-body { background: #53f28f; margin:0; }
+body {
+  background: #53f28f; margin:0;
+}
 
 #what-if-machine {
   height: 450px;
@@ -30,6 +32,7 @@ body { background: #53f28f; margin:0; }
   background-color: red;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+  margin-bottom:20px;
 }
 
 #go-faster-stripe .shade {
@@ -39,25 +42,88 @@ body { background: #53f28f; margin:0; }
 }
 
 #quote {
-  position: relative;
-  top: 235px;
-  text-transform:uppercase;
-  font-weight:bold;
   color:white;
-  text-align:center;
-  width:450px;
-  margin:auto;
   height:0;
+  margin:auto;
+  position: relative;
+  text-align:center;
+  text-transform:uppercase;
+  top: 235px;
+  width:450px;
 }
+
+.add-button {
+  -moz-border-radius:13px 13px 13px 13px;
+  -moz-box-shadow:0 0 1px rgba(255, 255, 255, 0.1) inset;
+  background:-moz-linear-gradient(center top , #93C85E 30%, #55A802 55%) repeat scroll 0 0 transparent;
+  border:1px groove #3A7404;
+  color:white;
+  display:table;
+  padding: 0 0.5em;
+  text-decoration:none;
+  text-shadow:0 -1px 0 #3A7404;
+  float:right;
+  margin-top:7px;
+}
+
+.add-button:hover {
+  border-color:#1a5404;
+}
+
+.add-button span {
+  border-left:2px groove rgba(150, 150, 150, 0.35);
+  display:inline-block;
+  line-height:1.2;
+  margin:0 0.25em 0 0.25em;
+  padding:0.3em 0.5em 0.2em 0.65em;
+  white-space:normal;
+}
+
+#download-wrapper {
+  -moz-border-radius:5px;
+  background-color:white;
+  border: 2px solid grey;
+  color:#444444;
+  display:table;
+  margin-top: 20px;
+  margin:auto;
+  padding:40px 20px 20px 20px;
+  width:510px;
+}
+
+a {
+  color:#003595;
+  text-decoration:none;
+}
+
+
+#download-wrapper img {
+  float:left;
+  margin-right:10px;
+}
+
+#download-wrapper p {
+  margin:0;
+  padding-bottom: 30px;
+  text-align:justify;
+}
+
   </style>
 </head>
 <body>
 <div id="what-if-machine">
   <div style="margin:auto;display:table;">
-  <div id="quote"><?php echo strtr(substr($header[0],2), '-', ' ').': '.$header[1] ?></div>
+  <div id="quote"><?php echo strtr(substr($header[0],2), '-', ' ').': <strong>'.$header[1] ?></strong></div>
   <img src="what-if-machine.png" height="433" width="706"/>
   </div>
 </div>
 <div id="go-faster-stripe"><div class="shade"></div></div>
-<div id="hull"></div>
+<div id="hull">
+<div id="download-wrapper">
+<img src="icon.png"/>
+<p>Some websites, including this one, add a quote from Futurama to the <a href="http://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Common_non-standard_headers">HTTP headers</a>.  If you are visiting a site that has these headers this Firefox extenstion shows the quote in the status bar.</p>
+<img src="preview.png"/>
+<a href="xfuturama.1.0.xpi" class="add-button"><b>+</b><span>Add to Firefox</span></a>
+</div>
+</div>
 </body>
