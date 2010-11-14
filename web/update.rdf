@@ -2,30 +2,30 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Seq RDF:about="rdf:#$kSBbo">
-    <RDF:li RDF:resource="rdf:#$lSBbo"/>
-    <RDF:li RDF:resource="rdf:#$uSBbo"/>
-  </RDF:Seq>
-  <RDF:Description RDF:about="urn:mozilla:extension:futurama@yellowgrey.com"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAFhzMvNMVT3ntMdTQWnke0ZgDIrJB5Pnz1ybrYso4Q/3PHWQ+Rn/FaraNzDTdqFv/8fwXc4KJs3MTJ0l8ngvXP/vJEVjUTFhtcrzCdlEIyGqVPHRJaCzfDc1bLdT3p7bbIPnT27T8MI7CJBoLMWPAzTXmeb28IldMTvpdYZ523qv">
-    <em:updates RDF:resource="rdf:#$kSBbo"/>
-  </RDF:Description>
   <RDF:Description RDF:about="rdf:#$oSBbo"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="1.5"
                    em:maxVersion="3.6.*"
                    em:updateLink="http://yellowgrey.com/futurama/xfuturama.1.0.xpi"
                    em:updateHash="sha1:d70528b251e9423fb9b4bce9fa6e22db55b1c320" />
-  <RDF:Description RDF:about="rdf:#$uSBbo"
-                   em:version="1.0.1">
-    <em:targetApplication RDF:resource="rdf:#$xSBbo"/>
-  </RDF:Description>
   <RDF:Description RDF:about="rdf:#$xSBbo"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="1.5"
                    em:maxVersion="4.0b7"
                    em:updateLink="http://yellowgrey.com/futurama/xfuturama.1.0.1.xpi"
-                   em:updateHash="sha1:cb1f1de89b9f63a25ff2c283c22404b561c91f98" />
+                   em:updateHash="sha1:4e65f7fd0c9da6e1e6bb94cbbdc9573806732d55" />
+  <RDF:Description RDF:about="rdf:#$uSBbo"
+                   em:version="1.0.1">
+    <em:targetApplication RDF:resource="rdf:#$xSBbo"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="rdf:#$kSBbo">
+    <RDF:li RDF:resource="rdf:#$lSBbo"/>
+    <RDF:li RDF:resource="rdf:#$uSBbo"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mozilla:extension:futurama@yellowgrey.com"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAK49PQ7Iwnffmd8qyKIhzfZXR9a8yXVuWebnU1/HMcN2V3aBxxy1QSAZJ8b7GZKzwMAYICGJbWtcPhBXdcGMDDu9Hn+jcWl1GLPD9hUJAxfwIMYUesqJMhuHDUD38BE5QN5Rvl2mB6TBmd+AUcM9PhOD7hTLJzQ4H871oOd3mYzO">
+    <em:updates RDF:resource="rdf:#$kSBbo"/>
+  </RDF:Description>
   <RDF:Description RDF:about="rdf:#$lSBbo"
                    em:version="1.0">
     <em:targetApplication RDF:resource="rdf:#$oSBbo"/>
