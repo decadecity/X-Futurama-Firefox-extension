@@ -1,38 +1,25 @@
 <?xml version="1.0"?>
-<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-
-  <Description about="urn:mozilla:install-manifest">
-   
-    <em:id>futurama@yellowgrey.com</em:id>
-    <em:name>X-Futurama</em:name>
-    <em:version>1.0</em:version>
-    <em:type>2</em:type>
-    <em:description>Shows Futurama quotes from HTTP headers.</em:description>
-    <em:creator>Josh Leder</em:creator>
-    <!-- optional items -->
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$VRBbo"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="1.0"
+                   em:maxVersion="4.0b7" />
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="futurama@yellowgrey.com"
+                   em:name="X-Futurama"
+                   em:version="1.0"
+                   em:type="2"
+                   em:description="Shows Futurama quotes from HTTP headers."
+                   em:creator="Josh Leder"
+                   em:homepageURL="http://yellowgrey.com/futurama/"
+                   em:iconURL="chrome://xfuturama/icon.png"
+                   em:updateURL="http://yellowgrey.com/futurama/update.rdf"
+                   em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDUlyHm+YVrcvPe+hAs3djbeS7+MO+J9c5GjpbncQQkZ3Xgmequemn1KGv9lbrXL6GUpkwqzpTDLw0YvwMGsO3y7jZwMxbdPqcFVRngz1GEY70eKt8Gb2APM7uRwQAmGF5KTg6lTtEkjMJYAPbaMhvBBY4FOOZGVFUu9gM3TspktQIDAQAB">
     <em:contributor>Matt Groening</em:contributor>
     <em:contributor>Dave</em:contributor>
     <em:contributor>Slashdot</em:contributor>
-    
-    <em:homepageURL>http://yellowgrey.com/futurama/</em:homepageURL>
-    <em:iconURL>chrome://xfuturama/icon.png</em:iconURL>
-    
-    <em:updateURL>http://yellowgrey.com/futurama/update.rdf</em:updateURL>
-
-    <em:updateKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDUlyHm+YVrcvPe+hAs3djbeS7+MO+J9c5GjpbncQQkZ3Xgmequemn1KGv9lbrXL6GUpkwqzpTDLw0YvwMGsO3y7jZwMxbdPqcFVRngz1GEY70eKt8Gb2APM7uRwQAmGF5KTg6lTtEkjMJYAPbaMhvBBY4FOOZGVFUu9gM3TspktQIDAQAB</em:updateKey>
-
-    <!-- Firefox -->
-    <em:targetApplication>
-      <Description>
-        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>1.0</em:minVersion>
-        <em:maxVersion>3.6.*</em:maxVersion>
-      </Description>
-    </em:targetApplication>
-    
-  </Description>
-
-</RDF>
-
-
+    <em:targetApplication RDF:resource="rdf:#$VRBbo"/>
+  </RDF:Description>
+</RDF:RDF>

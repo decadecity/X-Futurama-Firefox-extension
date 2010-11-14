@@ -1,1 +1,29 @@
-../update/update.rdf
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$wRBbo"
+                   em:version="1.0.1">
+    <em:targetApplication RDF:resource="rdf:#$zRBbo"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="rdf:#$mRBbo">
+    <RDF:li RDF:resource="urn:mozilla:extension:xfuturama@yellowgrey.com:1.0"/>
+    <RDF:li RDF:resource="urn:mozilla:extension:xfuturama@yellowgrey.com:1.0.1"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="rdf:#$oRBbo"
+                   em:version="1.0">
+    <em:targetApplication RDF:resource="rdf:#$rRBbo"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$zRBbo"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="1.5"
+                   em:maxVersion="4.0b7"
+                   em:updateLink="http://yellowgrey.com/futurama/xfuturama.1.0.1.xpi" />
+   <em:updates RDF:resource="rdf:#$mRBbo"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$rRBbo"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="1.5"
+                   em:maxVersion="3.6.*"
+                   em:updateLink="http://yellowgrey.com/futurama/xfuturama.1.0.xpi" />
+</RDF:RDF>
