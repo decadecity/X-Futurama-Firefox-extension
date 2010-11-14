@@ -57,10 +57,10 @@ td h2 {font-size:100%;font-weight:normal;padding:0;margin:0;}
       <table>
         <tbody>
           <tr>
-            <th>Current&nbsp;Version</th><td>1.0</td>
+            <th>Current&nbsp;Version</th><td>1.0.1</td>
           </tr>
           <tr class="divider">
-            <th>Works&nbsp;with</th><td>Firefox 1.5 - 3.6</td>
+            <th>Works&nbsp;with</th><td>Firefox 1.5 - 4.0b7</td>
           </tr>
           <tr class="divider">
             <th>Recognised&nbsp;headers</th><td><h2>X-Bender, X-Fry, X-Leela, X-Professor-Farnsworth and X-Zapp-Brannigan</h2></td>
