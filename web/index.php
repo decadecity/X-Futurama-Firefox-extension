@@ -69,9 +69,9 @@ td h2 {font-size:100%;font-weight:normal;padding:0;margin:0;}
       </table>
       <img src="preview.png" title="Bender: Behold, the internet." alt="X-Bender: Behold, the internet."/>
       <?php if ($ff) : ?>
-        <a title="Add this extension to your copy of Firefox" href="xfuturama.1.0.xpi" class="add-button"><b>+</b><span>Add to Firefox</span></a>
+        <a title="Add this extension to your copy of Firefox" href="xfuturama.1.0.1.xpi" class="add-button"><b>+</b><span>Add to Firefox</span></a>
       <?php else: ?>
-        <a title="Download this extension" href="xfuturama.1.0.xpi" class="download-button"><b>&darr;</b><span>Download</span></a>
+        <a title="Download this extension" href="xfuturama.1.0.1.xpi" class="download-button"><b>&darr;</b><span>Download</span></a>
       <?php endif ?>
     </div>
   </div>
