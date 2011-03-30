@@ -2,24 +2,24 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="rdf:#$VRBbo"
-                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="1.0"
-                   em:maxVersion="4.0b7" />
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="futurama@yellowgrey.com"
                    em:name="X-Futurama"
-                   em:version="1.0.1"
+                   em:version="1.0.2"
                    em:type="2"
                    em:description="Shows Futurama quotes from HTTP headers."
                    em:creator="Josh Leder"
                    em:homepageURL="http://yellowgrey.com/futurama/"
                    em:iconURL="chrome://xfuturama/icon.png"
                    em:updateURL="http://yellowgrey.com/futurama/update.rdf"
-                   em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDUlyHm+YVrcvPe+hAs3djbeS7+MO+J9c5GjpbncQQkZ3Xgmequemn1KGv9lbrXL6GUpkwqzpTDLw0YvwMGsO3y7jZwMxbdPqcFVRngz1GEY70eKt8Gb2APM7uRwQAmGF5KTg6lTtEkjMJYAPbaMhvBBY4FOOZGVFUu9gM3TspktQIDAQAB">
+                   em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC89CfozRplNAoxLEGD7U6R80glW5N0Y38pO1IAHMN4pJtn9mRJakUS05pVJ8Bz1/edMqj1NCUWRQ6Aq5WKUDcUOxBIF4dynjEU6gj9sZpFYgLhdm0VRu1nkaekVl2OYernQAu9AAwzwZC08a9jNYa9hmyBX9aIivASxh7nuBVDqwIDAQAB">
     <em:contributor>Matt Groening</em:contributor>
     <em:contributor>Dave</em:contributor>
     <em:contributor>Slashdot</em:contributor>
     <em:targetApplication RDF:resource="rdf:#$VRBbo"/>
   </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$VRBbo"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="1.0"
+                   em:maxVersion="4.0.*" />
 </RDF:RDF>
